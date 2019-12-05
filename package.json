@@ -1,0 +1,25 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "An Odin Project for learning ES6, DOM and webpack etc advance subject in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvin8773/odin-restaurant-page.git"
+  },
+  "author": "Kelvin Liang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvin8773/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/kelvin8773/odin-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
