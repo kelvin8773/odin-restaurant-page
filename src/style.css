@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+}
+
+#content {
+  padding: 30px;
+  background-color: linen;
+  text-align: center;
+  width: 100%;
+}
+
+#content h1 {
+  padding: 20px;
+}
+
+#main-image {
+  padding: 20px;
+  width: 75%;
+  border-radius: 3rem;
+}
