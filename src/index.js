@@ -2,26 +2,42 @@ import './style.css';
 import MainImage from './dim-sum.jpg';
 import MenuImage from './dim-sum-menu.png'
 
-console.log('Page Starting ....');
+const initialize = () => {
+  document.body.prepend(headerModule());
 
-const loadPage = () => {
+  const home = homeModule();
+  const menu = menuModule();
+  const contact = contactModule();
+
+  document.getElementById('home-link').addEventListener('click', () => { loadPage(home); });
+  document.getElementById('menu-link').addEventListener('click', () => { loadPage(menu); });
+  document.getElementById('contact-link').addEventListener('click', () => { loadPage(contact); });
+
+  loadPage(home);
+}
+
+const loadPage = (node) => {
   const content = document.getElementById('content');
+  let currentNode = content.childNodes[0];
 
-  content.appendChild(headerModule());
-  content.appendChild(homeModule());
-  content.appendChild(menuModule());
-  content.appendChild(contactModule());
-
-};
+  currentNode.replaceWith(node);
+}
 
 const headerModule = () => {
-  const header = document.createElement('div');
+  const header = document.createElement('header');
   header.id = 'header-module';
 
   const headline = document.createElement('h1');
   headline.innerText = 'Dim Sum House';
 
   header.appendChild(headline);
+
+  const navbar = document.createElement('nav');
+  navbar.id = 'nav-bar';
+
+  navbar.innerHTML = '<a href="#" id="home-link">Home</a> <a href = "#" id = "menu-link" > Menu</a> <a href="#" id="contact-link">Contact</a>'
+
+  header.appendChild(navbar);
 
   header.insertAdjacentHTML("beforeend", '<hr align="center" width="75%">')
 
@@ -53,8 +69,6 @@ const menuModule = () => {
   const menu = document.createElement('div');
   menu.id = 'menu-module';
 
-  menu.innerHTML = '<h2>Menu</h2>'
-
   const menuImage = new Image();
   menuImage.src = MenuImage;
 
@@ -69,13 +83,12 @@ const contactModule = () => {
   const contact = document.createElement('div');
   contact.id = 'contact-module';
 
-  contact.innerHTML = '<h2>Contact</h2> <h5> Telephone </h5> <p>+1 415 333 8888</p> <h5> Address</h5> <p>No.1234 College Ave</p> <p>San Mateo, CA, USA</p>';
+  contact.innerHTML = '<h5> Telephone </h5> <p>+1 415 333 8888</p> <h5> Address</h5> <p>No.1234 College Ave</p> <p>San Mateo, CA, USA</p>';
 
   return contact;
 }
 
-
-loadPage();
+initialize();
 
 
 
