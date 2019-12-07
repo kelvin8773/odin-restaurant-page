@@ -2,26 +2,6 @@ import './style.css';
 import MainImage from './dim-sum.jpg';
 import MenuImage from './dim-sum-menu.png';
 
-const initialize = () => {
-  document.body.prepend(headerModule());
-
-  const home = homeModule();
-  const menu = menuModule();
-  const contact = contactModule();
-
-  document.getElementById('home-link').addEventListener('click', () => {
-    loadPage(home);
-  });
-  document.getElementById('menu-link').addEventListener('click', () => {
-    loadPage(menu);
-  });
-  document.getElementById('contact-link').addEventListener('click', () => {
-    loadPage(contact);
-  });
-
-  loadPage(home);
-};
-
 const loadPage = (node) => {
   const content = document.getElementById('content');
   const currentNode = content.childNodes[0];
@@ -100,6 +80,26 @@ const contactModule = () => {
   contact.appendChild(contactInfo);
 
   return contact;
+};
+
+const initialize = () => {
+  document.body.prepend(headerModule());
+
+  const home = homeModule();
+  const menu = menuModule();
+  const contact = contactModule();
+
+  document.getElementById('home-link').addEventListener('click', () => {
+    loadPage(home);
+  });
+  document.getElementById('menu-link').addEventListener('click', () => {
+    loadPage(menu);
+  });
+  document.getElementById('contact-link').addEventListener('click', () => {
+    loadPage(contact);
+  });
+
+  loadPage(home);
 };
 
 initialize();
