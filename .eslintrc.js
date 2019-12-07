@@ -1,3 +1,5 @@
+/*eslint-env browser*/
+
 module.exports = {
   parserOptions: { ecmaVersion: 6 },
   extends: "airbnb-base",
@@ -5,5 +7,8 @@ module.exports = {
     "no-shadow": 0,
     "no-param-reassign": 0,
     "eol-last": 0
+  },
+  env: {
+    browser: true
   }
 };
