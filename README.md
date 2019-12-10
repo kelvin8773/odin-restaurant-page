@@ -1,4 +1,4 @@
-# odin-restaurant-page
+# Restaurant Page with JavaScript & Webpack
 
 An Odin Project for learning ES6, DOM and webpack etc advance topics in JavaScript.
 
@@ -14,7 +14,7 @@ An Odin Project for learning ES6, DOM and webpack etc advance topics in JavaScri
 * With the help of DOM manipulations, user can dynamically click through different pages without the need to reload the whole website.
 
 
-## reference
+## Reference
 
 [Odin Project Specification](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
