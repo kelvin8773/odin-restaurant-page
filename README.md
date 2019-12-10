@@ -3,6 +3,17 @@
 An Odin Project for learning ES6, DOM and webpack etc advance topics in JavaScript.
 
 
+## To Run this Project
+
+* `git clone` this project to your local machine.
+
+* `cd dist/` and open `index.html` to see the final project page.
+
+* To try webpack yourself, run `npx run watch` in project root folder.
+
+* Update Javascript/image files in `src/` folder or `index.html` under `dist/` folder, wait until webpack finish the rebuild and refresh the page to see the result. 
+
+
 ## Note
 
 * The main goal of this project is to learn module in ES6 and webpack configuration for standard project.
