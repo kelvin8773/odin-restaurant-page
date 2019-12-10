@@ -62,4 +62,6 @@ typings/
 
 # misc
 .DS_Store
+.eslintrc.js
+
 
