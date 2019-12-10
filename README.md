@@ -2,6 +2,8 @@
 
 An Odin Project for learning ES6, DOM and webpack etc advance topics in JavaScript.
 
+[Project Demo](https://kelvin8773.github.io/odin-restaurant-page/)
+
 
 ## To Run this Project
 
@@ -27,11 +29,9 @@ An Odin Project for learning ES6, DOM and webpack etc advance topics in JavaScri
 
 ## Reference
 
-[Odin Project Specification](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
+* [Odin Project Specification](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-[Project Demo](https://kelvin8773.github.io/odin-restaurant-page/)
+* [Webpack Doc - Getting Start](https://webpack.js.org/guides/getting-started/)
 
-[Webpack Doc - Getting Start](https://webpack.js.org/guides/getting-started/)
-
-[Webpack Doc - Asset Management](https://webpack.js.org/guides/asset-management/)
+* [Webpack Doc - Asset Management](https://webpack.js.org/guides/asset-management/)
 
